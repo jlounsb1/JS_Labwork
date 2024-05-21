@@ -47,7 +47,26 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
 //Code above copied from codesandbox, anything listed below this comment is my work for the exercise
 
 
-const isDivisible5 = (n1 % 5) + (n2 % 5) + (n3 % 5) + (n4 % 5) ==0
+//Exercise 1
+const isDivisible5 = (n1 % 5) + (n2 % 5) + (n3 % 5) + (n4 % 5) ==0;
 console.log(isDivisible5);
 //Checking to see if the numbers are divisible by five with modulus. If there was a remainder this would be false
 
+const isGreater = n1>n4;
+console.log(isGreater);
+//checking if n1 is more than n4
+
+const arithChain = (((n2-n1)*n3)%n4);
+console.log(arithChain);
+//performing arithmetic needed from exercise
+
+const newUnder25 = n1 < 25 && n2 < 25 && n3 < 25 && n4 < 25;
+console.log(newUnder25);
+const newIsValid = isSum50 && isTwoOdd && newUnder25 && isUnique;
+console.log(newIsValid);
+//changed the greater than to less than and the operation to AND
+//if any number is greater than 25, the variable newOver25 would return false
+//then switched the isValid to a new variable with ! removed
+
+
+//Exercise 2
